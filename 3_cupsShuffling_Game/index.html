@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Ball Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Find the Ball!</h1>
+    <p id="counter" style="font-size: 1.2em; margin-top: 10px;">Correct Answers: 0/3</p>
+    <p id="mode-display" style="font-size: 1.2em; margin-top: 10px;">Mode: Easy</p>
+    <p>Pick a card to  find the ball.</p>
+    <button id="shuffle-btn" onclick="revealAndShuffle()">Shuffle Cups</button>
+    <div class="cups-container">
+        <div class="cup" id="cup0" style="left: 0px;" onclick="pickCup(0)" style="color: #2ecc71;"></div>
+        <div class="cup" id="cup1" style="left: 120px;" onclick="pickCup(1)"style="color: gold"></div>
+        <div class="cup" id="cup2" style="left: 240px;" onclick="pickCup(2)"style="color: yellow"></div>
+    </div>
+    <p id="result"></p>
+    <button id="shuffle-next" class="hidden" onclick="nextRound()">Next Round</button>
+    <div id="question" class="hidden question-container">
+        <p id="question-text"></p>
+        <div id="choices"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

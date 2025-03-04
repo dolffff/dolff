@@ -1,0 +1,255 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+body {
+    background-image: url('bgata.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+    padding-bottom: 50px; /* Ensures footer is not hidden behind content */
+    flex: 1;
+}
+
+nav {
+    background-color: rgba(30, 30, 30, 0.3);
+    padding: 14px 25px;
+}
+
+.btn {
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 50px;
+    color: gold;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+}
+.logoAndTitle {
+    display: inline-block;
+    opacity: 1;
+}
+.logoAndTitle img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    top:8px;}
+
+
+.logoAndTitle h3 {
+    color: beige;
+    display: inline-block;
+    margin: 0;
+    margin-right: 12px;
+    position: relative;
+    top:-10px;
+}
+
+.links {
+    float: right;
+    padding: 20px;
+    padding-right: 35px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    padding-right: 35px;
+}
+
+.links a:hover {
+    color: gold;
+}
+
+/* Levi Section */
+.levi {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center; /* Centers the .floating element horizontally */
+    align-items: center; /* Centers the .floating element vertically */
+}
+
+
+.single-map-container {
+    text-align: center;
+    margin-top: 50px;
+    position: absolute;
+   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#mainPhoto {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#imageName {
+    font-size: 18px;
+    font-weight: bold;
+    color: gold;
+    display: block;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px 20px; /* Padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center; /* Center text */
+}
+
+
+
+
+/* Keyframe animation for floating effect */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+/* Sidebar Styling */
+.sidebar {
+    padding: 45px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 30px 0;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar a:hover {
+    color: gold;
+}
+
+/* Friends Section */
+.friends {
+    background-color: rgba(30, 30, 30, 0.3);
+    padding: 45px;
+    position: absolute;
+    top: 120px;
+    right: 60px;
+    color: white;
+}
+
+.friend {
+    background-color: rgba(30, 30, 30, 0.2);
+    padding: 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+.friend img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.friend:hover {
+    color: gold;
+}
+
+/* Footer Styling */
+footer {
+    width: 100%;
+    background-color: rgba(30, 30, 30, 0.3);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+}
+
+footer a {
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: gold;
+}
+.gallery-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#mainPhoto {
+    width: 275px;
+    height: 275px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+button {
+    font-size: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+    width: 120px;
+}
+
+#imageName {
+    font-size: 18px;
+    font-weight: bold;
+    color: gold;
+}
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+#mainPhoto {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+
+    
+    /* Apply Floating Animation */
+    animation: floating 3s ease-in-out infinite;
+}

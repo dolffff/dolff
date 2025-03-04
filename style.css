@@ -1,0 +1,61 @@
+/* Ensure the body takes up full height and is set up for a centered layout */
+body {
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    margin: 0; /* Reset default body margin */
+    display: flex; /* Flexbox for centering */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centering container */
+.levi {
+    display: flex;
+    justify-content: center; /* Centers the .floating element horizontally */
+    align-items: center; /* Centers the .floating element vertically */
+    position: relative;
+    width: 100%;
+    height: 100%; /* Full height of the viewport */
+}
+
+/* Anchor styling */
+.floating-link {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+}
+
+/* Floating Element Styling */
+.floating {
+    width: 270px;
+    height: 270px;
+    background-color: #000000; /* Temporary placeholder background color */
+    background-image: url('Logo.jpg'); /* Path to image in the same folder */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    position: absolute; /* Changed to absolute for proper centering */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Ensure it’s perfectly centered */
+    animation: float 3s ease-in-out infinite;
+    z-index: 9999;
+}
+
+/* Keyframes for floating animation */
+@keyframes float {
+    0% {
+        transform: translate(-50%, -50%) translateY(0); /* Initial position */
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-20px); /* Move up */
+    }
+    100% {
+        transform: translate(-50%, -50%) translateY(0); /* Back to original position */
+    }
+}

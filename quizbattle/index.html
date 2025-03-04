@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Quiz Battle: Chou vs Dyrroth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🔥 MLL 1v1 Quiz Battle 🔥</h1>
+    <h3 id="current-turn">It’s player 1 turn!</h3>
+    <h3 id="winner">
+    </h3>
+    <div class="battle-container">
+        <div class="hero">
+            <h2>player 1</h2>
+            <div class="health-bar">
+                <div class="hp" id="chou-hp"></div>
+            </div>
+            <img src="player1.png" class="hero-img" id="chou-img" autoplay loop muted width="100px"s>
+            <img src="player2.png" class="victory-gif" id="chou-victory" style="display: none;">
+        </div>
+        <div class="hero">
+            <h2>Player 2</h2>
+            <div class="health-bar">
+                <div class="hp" id="dyrroth-hp"></div>
+            </div>
+            <img src="player2.png" class="hero-img" id="dyrroth-img" autoplay loop muted width="100px">
+            <img src="player2.png" class="victory-gif" id="dyrroth-victory" style="display: none;">
+        </div>
+    </div>
+    <div class="placeholder"></div>
+    <div id="question-container">
+        <h2 id="question">Loading question...</h2>
+        <div id="choices"></div>
+    </div>
+
+    
+    <button id="restart-btn" onclick="restartGame()">Restart Game</button>
+    <button id="back-btn">Back to Main Menu</button>
+    <script src="script.js"></script>
+</body>
+</html>

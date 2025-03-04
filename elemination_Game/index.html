@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Hero Quiz Game</h1>
+    
+    <div class="scores">
+        <p>Score: <span id="user-score">0</span></p>
+        <p>High Score: <span id="highest-score">0</span></p>
+        <p>Lives: <span id="user-lives">1</span></p>
+        <a href="../Dashboard/index.html">Back to Main Menu</a>
+    </div>
+    <div class="gif"><img src="angela.gif" class="gela" alt="" width="320px"></div>
+    <div id="heroes-container">
+        <!-- Easy Difficulty -->
+        <div class="difficulty-row">
+            <img src="heroes/mage/1.jpg" class="hero" id="easy-hero1">
+            <img src="heroes/mage/2.jpg" class="hero" id="easy-hero2">
+            <img src="heroes/mage/3.jpg" class="hero" id="easy-hero3">
+            <img src="heroes/mage/4.jpg" class="hero" id="easy-hero4">
+            <img src="heroes/mage/5.jpg" class="hero" id="easy-hero5">
+        </div>
+    
+        <!-- Normal Difficulty -->
+        <div class="difficulty-row">
+            <img src="heroes/tank/1.jpg" class="hero" id="normal-hero1">
+            <img src="heroes/tank/2.jpg" class="hero" id="normal-hero2">
+            <img src="heroes/tank/3.jpg" class="hero" id="normal-hero3">
+            <img src="heroes/tank/4.jpg" class="hero" id="normal-hero4">
+            <img src="heroes/tank/5.jpg" class="hero" id="normal-hero5">
+        </div>
+    
+        <!-- Hard Difficulty -->
+        <div class="difficulty-row">
+            <img src="heroes/mm/1.jpg" class="hero" id="hard-hero1">
+            <img src="heroes/mm/2.jpg" class="hero" id="hard-hero2">
+            <img src="heroes/mm/3.jpg" class="hero" id="hard-hero3">
+            <img src="heroes/mm/4.jpg" class="hero" id="hard-hero4">
+            <img src="heroes/mm/5.jpg" class="hero" id="hard-hero5">
+        </div>
+    
+        <!-- Advanced Difficulty -->
+        <div class="difficulty-row">
+            <img src="heroes/assasins/1.jpg" class="hero" id="advanced-hero1">
+            <img src="heroes/assasins/2.jpg" class="hero" id="advanced-hero2">
+            <img src="heroes/assasins/3.jpg" class="hero" id="advanced-hero3">
+            <img src="heroes/assasins/4.jpg" class="hero" id="advanced-hero4">
+            <img src="heroes/assasins/5.jpg" class="hero" id="advanced-hero5">
+        </div>
+    </div>
+
+    <div id="question-container">
+        <h2 id="current-question">Click a hero to start!</h2>
+        <div id="choices-container"></div>
+    </div>
+    <div id="congrats-message" class="hidden">
+        <h2>🎉 Congratulations! You've completed the game! 🎉</h2>
+        <button onclick="restartGame()">Play Again</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+.logo{
+    position: absolute;
+    top: -15px;
+    left: 50px;
+    z-index: 5;
+}
+.logo img{position: absolute;
+    top: 35px;
+    left: 15px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.fiction{
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    z-index: 5;
+    color: white;;
+    font-size: 15px;
+}
+#myVideo {
+    position: fixed;  /* Position the video to cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;  /* Full width of the viewport */
+    height: 100%;  /* Full height of the viewport */
+    object-fit: cover;  /* Ensures the video fills the entire viewport without distortion */
+    z-index: -1;  /* Ensure the video stays behind other content */
+}
+.term{ 
+    position: absolute;
+    top: 95%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+
+}
+span{
+    color: turquoise;
+}
+.progress {
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    bottom: 20px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional background color for the progress bar */
+    z-index: 1;  /* Make sure the progress bar is in front of the video */
+}
+
+.progress {
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    height: 18px;  /* Ensure the height is the same as the parent progress bar */
+    background-color: gold;
+    animation: extennd 9s;
+    animation-timing-function: ease;
+}
+
+@keyframes extennd {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}

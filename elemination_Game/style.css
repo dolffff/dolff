@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url(bbg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+.gif {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+}
+.scores {
+    width: 100%; /* Make it span full width */
+    display: flex;
+    justify-content: center; /* Center contents horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Space between items */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 10px;
+}
+
+.scores p {
+    margin: 0 10px; /* Space out text */
+}
+
+.scores a {
+    padding: 8px 12px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    background-color: rgb(93, 199, 7);
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.scores a:hover {
+    text-decoration: underline;
+}
+.heroes-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+}
+
+.hero {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.hero:hover {
+    transform: scale(1.1);
+}
+
+.hero.crossed-out {
+    filter: grayscale(100%);
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.difficulty-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#question-container {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    display: inline-block; /* Inline block to fit content */
+    color: #333; /* Font color for questions */
+}
+
+.choice {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.choice:hover {
+    background-color: #2980b9;
+}
+
+.correct {
+    background-color: #2ecc71;
+}
+
+.incorrect {
+    background-color: #e74c3c;
+}
+
+.hidden {
+    display: none;
+}
+
+#congrats-message {
+    background-color: #2ecc71;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#congrats-message button {
+    background-color: white;
+    color: #2ecc71;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#congrats-message button:hover {
+    background-color: #27ae60;
+    color: white;
+}
