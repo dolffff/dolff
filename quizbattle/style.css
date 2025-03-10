@@ -404,3 +404,38 @@ body {
         flex: 1 1 100%; /* 1 item per row sa mobile */
     }
 }
+
+
+/* Make the main container responsive */
+.container {
+    max-width: 100%;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Buttons adjust to screen size */
+.button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Ensure images and elements don't overflow */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Stack elements on smaller screens */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
