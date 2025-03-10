@@ -439,3 +439,7 @@ img {
         gap: 15px;
     }
 }
+
+body {
+    overflow-x: hidden;
+}
