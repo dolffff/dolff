@@ -331,3 +331,39 @@ body {
 #back-btn:hover {
     background-color: #555;
 }
+
+
+/* Base styles — para sa desktop/laptop */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Responsive styles — para sa phone/tablet (768px pababa) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column; /* Para naka-stack sa mobile */
+        align-items: center;
+    }
+
+    .button {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+}
