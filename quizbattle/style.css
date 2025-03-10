@@ -386,3 +386,21 @@ body {
         display: block;
     }
 }
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.flex-item {
+    flex: 1 1 calc(50% - 20px); /* 2 items per row */
+}
+
+@media (max-width: 600px) {
+    .flex-item {
+        flex: 1 1 100%; /* 1 item per row sa mobile */
+    }
+}
